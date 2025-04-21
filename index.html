@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Project Ver2.0 Prototype </title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				text-align: center;
+				background-color: #34b9d4;
+				position: relative;
+			}
+
+			.image-container {
+				text-align: center;
+				margin-bottom: 40px;
+			}
+
+			.image-container img {
+				width: 600px;
+				height: 450px;
+				object-fit: contain;
+			}
+
+			button, a {
+				display: block;
+				margin: 10px auto;
+				text-align: center;
+			}
+
+			.pattern {
+				position: fixed; /* Keep this fixed */
+				width: 100px;
+				height: 100%;
+				background: rgba(255, 255, 255, 0.1);
+				z-index: -1;
+			}
+
+			.left-pattern {
+				left: 0;
+				background-image: url('pattern.png'); /* Local image */
+				background-size: cover;
+			}
+
+			.right-pattern {
+				right: 0;
+				background-image: url('pattern.png'); /* Local image */
+				background-size: cover;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="pattern left-pattern"></div>
+		<div class="pattern right-pattern"></div>
+
+		<h1 style="text-align:center;"> Welcome to Travel Guide  </h1>
+		<p style="text-align:center;"> Assistance </p>
+		<p style="text-align:center;"> Please select where you would like to go!!</p>
+
+		<div class="image-container">
+			<img src="https://img.peapix.com/a742976744a74cf2a86b9ebe3e5a1193_480.jpg" alt="Rameshwaram">
+			<button onclick="window.open('https://www.google.com/search?q=rameshwaram');"> Rameshwaram </button>
+			<a href="ram.html"> Places </a>
+			<a href="hotelram.html"> Hotels </a>
+		</div>
+		<div class="image-container">
+			<img src="https://cdn.britannica.com/26/84526-050-45452C37/Gateway-monument-India-entrance-Mumbai-Harbour-coast.jpg" alt="Mumbai">
+			<button onclick="window.open('https://www.google.com/search?q=mumbai');"> Mumbai </button>
+			<a href="mumb.html"> Places </a>
+			<a href="hotelmumb.html"> Hotels </a>
+		</div>
+		<div class="image-container">
+			<img src="https://media.easemytrip.com/media/Blog/India/637116640324801740/637116640324801740ptZ4Mc.jpg" alt="Delhi">
+			<button onclick="window.open('https://www.google.com/search?q=delhi');"> Delhi </button>
+			<a href="del.html"> Places </a>
+			<a href="hoteldel.html"> Hotels </a>
+		</div>
+		<div class="image-container">
+			<img src="https://i.ytimg.com/vi/YSGRfo1ePIE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAa2x52YJUpftFpqAXz2ohK1T4gIg" alt="Ratnagiri">
+			<button onclick="window.open('https://www.google.com/search?q=ratnagiri');"> Ratnagiri </button>
+			<a href="rata.html"> Places </a>
+			<a href="hotelrata.html"> Hotels </a>
+		</div>		
+	</body>
+</html>
